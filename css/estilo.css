@@ -86,7 +86,11 @@ div a img {
 
 .carrusel {
     width: 100%;
-    height:629px;
+    height:40%;
+}
+
+.hamb {
+    display: none;
 }
 
 
@@ -95,7 +99,7 @@ div a img {
 /*seccion INDEX*/
 .productos {
     width:100%;
-    height:600px;
+    height:100%;
     display: grid;
     grid-template-rows: 90%;
     grid-template-columns: 30% 30% 30%;
@@ -134,23 +138,26 @@ div a img {
     justify-content: space-evenly;
     align-content: center;
     width:100%;
-    height: 355px;
+    height: 100%;
 }
 
 .textoManifiesto {
     grid-area: textomanifiesto;
     padding: 20px;
+    height:100%;
+    width: 100%;
 }
 
 .textoManifiesto p{    
     padding-top: 40px;
     padding-bottom: 40px;
-    text-align: justify;
+    text-align: justify;   
 }
 
 .imgManifiesto {
     grid-area: fotomani;
     width: 100%;
+    height:100%;
 }
 
 .rutinas {
@@ -497,8 +504,282 @@ footer div ul li {
 
 
 
+@media screen and (max-width: 600px) {
+     /*seccion INDEX*/
+    .productos {
+        width:100%;
+        height:100%;
+        display: grid;
+        grid-template-rows: 90%;
+        grid-template-columns: 90%;
+        grid-template-areas: 'producto1';
+        justify-content: space-evenly;
+        align-content: center;
+        justify-items: stretch;
+        align-items: stretch;
+        background-color: #F2BDC7;
+    }
+    .tituloProductos {
+        text-align: center;
+        background-color: #F2BDC7;
+        padding-top: 30px;
+        font-size: 15px;
+    }
+    
+    .producto1 {
+        grid-area: producto1;
+        height:100%;
+        width:100%;
+    }
 
+    .producto2 {
+        display: none;
+    }
 
+    .producto3 {
+        display: none;
+    }
+
+    .manifiesto {
+        display:grid;
+        grid-template-rows: 55% 35%;
+        grid-template-columns: 80%;
+        grid-template-areas: 'textomanifiesto' 
+                              'fotomani';
+        justify-items: stretch;
+        align-items: stretch;
+        justify-content: space-evenly;
+        align-content: center;
+        width:100%;
+        height: 100%;
+    }
+    
+    .textoManifiesto {
+        grid-area: textomanifiesto;
+        height:100%;
+        width: 100%;
+        padding: 0px;
+    }
+    
+    .textoManifiesto p{    
+        padding-top: 10px;
+        padding-bottom: 10px;
+        text-align: justify;  
+        font-size: 10px;
+    }
+    
+    .imgManifiesto {
+        grid-area: fotomani;
+        width: 100%;
+        height:100%;
+    }
+
+    .textoManifiesto h2 {
+        font-size: 15px;
+        text-align: center;
+    }
+
+    .textoManifiesto a {
+        font-size: 10px;
+        text-align: center;
+    }
+
+    .rutinas {
+        display:grid;
+        grid-template-rows: 55% 35%;
+        grid-template-columns: 80%;
+        grid-template-areas: 'textorutina'
+                            'fotoruti' ;
+        justify-items: stretch;
+        align-items: stretch;
+        justify-content: space-evenly;
+        align-content: center;
+        background-color: #F2BDC7;
+        width:100%;
+        height: 380px;
+    }
+    
+    .textoRutina {
+        grid-area: textorutina;
+    }
+    
+    .imgRutina {
+        grid-area: fotoruti;
+    }
+    
+    .textoRutina p {
+        padding-top: 10px;
+        padding-bottom: 10px;
+        text-align: justify;  
+        font-size: 10px;
+    }
+
+    .textoRutina h2 {
+        font-size: 15px;
+        text-align: center;
+    }
+
+    .textoRutina a {
+        font-size: 10px;
+        text-align: center;
+    }
+    
+    form {
+        font-style:normal;
+        font-size:20px;
+        line-height: 30px;
+    }
+    
+    .newsletterMain {
+        width: 100%;
+        height: 80px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    footer {
+        display: grid;
+        grid-template-rows: 10% 20% 45% 10%;
+        grid-template-columns: 100%;
+        grid-template-areas: 'logo' 
+                                'menu' 
+                                'newsletter' 
+                                'sociales';
+        justify-content: center;
+        justify-items: center;
+        align-items: center;
+        background-color:lavenderblush;
+        color:black;
+        height:100%;
+        width: 100%;
+    }
+    
+    .logoFooter {
+       grid-area: logo;
+       display: none;
+    }
+    
+    .menuFooter {
+      grid-area: menu;
+      font-size: 5px;
+    }
+    
+    footer div ul {
+        text-decoration: none;
+        list-style-type: none;
+       
+    }
+
+    footer div ul li a {
+        font-size: 15px;
+    }
+    
+    .newsletterFooter {
+        grid-area: newsletter;
+        padding-top: 20px;
+        padding-bottom: 20px;
+        padding-left: 20px;
+    }
+    
+    .footerSocial {
+        grid-area: sociales;
+    }
+    
+    .footerSocial img {
+        width:40px;
+        height:40px;
+    }
+    
+    footer div ul li {
+        padding:3px;
+    }
+ 
+    
+    header {
+        display: grid;
+        grid-template-columns: 40% 30%;
+        grid-template-rows: 100%;
+        grid-template-areas: 'logo menu1';
+        justify-content: space-around;
+        background-color:lavenderblush;
+        width:100%;
+        height: 110px;
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+
+    div a img {
+        grid-area: logo;
+        width:100%;
+        height:100%;
+    }
+
+    div nav ul {
+        display: none;
+    }
+
+    .hamb {
+        grid-area: menu1;
+        display: block;
+    }
+
+    .hamb img {
+        width: 100%;
+        height: 100%;
+       
+    }
+
+    /*seccion PRODUCTOS*/
+    .seccionProductos {
+        display:flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+        width:100%;
+        height:100px;
+    }
+
+    .fotosProductos {
+        display:grid;
+        grid-template-rows: 12% 12% 12% 12% 12% 12% 12% 12%;
+        grid-template-columns: 90%;
+        grid-template-areas: 'foto1'
+                            'foto2'
+                            'foto3'
+                            'foto4'
+                            'foto5' 
+                            'fotos6' 
+                            'foto7'
+                            'foto8';
+      
+        row-gap: 10px;
+        justify-content: center;
+        align-content:center;
+        width:100%;
+        height: 100%;
+    }
+
+    .fotosProductos img {
+        width:100%;
+        height:100%;    
+    }
+
+    .seccionProductos h1 {
+        padding-top: 10px;
+        padding-bottom: 10px;
+        font-size: 20px;
+    }
+
+    .seccionProductos p {
+        font-size: 15px;
+        padding-left: 5px;
+        padding-right: 5px;
+        text-align: center;
+
+    }
+}
 
 
 
