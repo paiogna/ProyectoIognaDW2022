@@ -10,6 +10,8 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
 </head>
 <body class="family">
     <!--FILA DEL LOGO Y EL MENU-->
@@ -39,12 +41,68 @@
             </nav>
         </div>
     </header>
+    <div id="navbarCelu">
+        <nav class="navbar navbar-light colorNavbar">
+            <div class="container-fluid">
+              <a class="navbar-brand" href="#"></a>
+              <img id="logoCel" src="../pruebaGitHub/imagen/logo.png" alt="logo">
+              <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+                <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+                    <div class="offcanvas-header">
+                        <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Menu Flora</h5>
+                        <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                    </div>
+                    <div class="offcanvas-body">
+                        <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                            <li class="nav-item">
+                                <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="../pruebaGitHub/html/productos.html">Productos</a>
+                            </li>
+                            <li>
+                                <a class="nav-link" href="../pruebaGitHub/html/rutina.html">Rutina</a>
+                            </li>
+                            <li>
+                                <a class="nav-link" href="../pruebaGitHub/html/quienes-somos.html">Quienes</a>
+                            </li>
+                            <li>
+                                <a class="nav-link" href="../pruebaGitHub/html/contacto.html">Contacto</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+              </div>
+            </div>
+        </nav>
+    </div>
+    
     <!--CIERRE FILA DEL LOGO Y EL MENU-->
     <!--COMIENZA LA INFORMACION DE MI SECCION-->
     <main>
-        <div>
-            <img class="carrusel" src="imagen/home.jpg" alt="carrusel"><!--ACA VA A IR UN CARRUSEL DE IMAGENES-->
-        </div>
+        <div id="carouselExampleFade" class="carousel slide carousel-fade" data-bs-ride="carousel">
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img src="imagen/home.jpg" class="d-block w-100" alt="carousel1">
+              </div>
+              <div class="carousel-item">
+                <img src="imagen/carousel2.jpeg" class="d-block w-100" alt="carousel2">
+              </div>
+              <div class="carousel-item">
+                <img src="imagen/carousel3.jpeg" class="d-block w-100" alt="carousel3">
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
         <div>
             <h2 class="tituloProductos">Productos destacados</h2>
         </div>
@@ -64,10 +122,10 @@
         <div class="rutinas">
             <div class="textoRutina">
                 <h2>Rutinas de Cuidado facial</h2>
-                <p>Las rutinas de cuidado nos permiten cuidar de nuestra piel de una manera organizada y apuntando a nuestros objetivos especificos. En Flora queremos que cuides de tu piel como ella se lo merece, que logres tus objetivos y que tengas la confianza de que tu piel puede verse como siempre la soñaste. Como cada piel es diferente, te invitamos a que realices el test y averigues cual es tu rutina ideal!!</p>
+                <p>En Flora queremos que cuides de tu piel como ella se lo merece, que logres tus objetivos y que tengas la confianza de que tu piel puede verse como siempre la soñaste. Como cada piel es diferente, te invitamos a que realices el test y averigues cual es tu rutina ideal!!</p>
                 <a href="html/rutina.html">Conoce cuál es tu rutina ideal</a>
             </div>
-            <img class="imgRutina" src="imagen/rutina.jpg" alt="foto-rutina">
+            <img class="imgRutina" src="imagen/goteroserum.jpg" alt="foto-rutina">
         </div>
         <div class="newsletterMain">
             <label for="email">Únete a nuestro Newsletter</label>
