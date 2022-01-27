@@ -564,7 +564,7 @@ footer div ul li a:hover{
 }
 
 
-@media screen and (max-width: 375px) {
+@media screen and (max-width: 415px) {
     #navbarCelu {
         display:initial;
     }
@@ -979,7 +979,7 @@ footer div ul li a:hover{
 
 
 
-@media screen and (min-width: 375px) and (max-width: 768px) {
+@media screen and (min-width: 415px) and (max-width: 768px) {
 
     #navbarCelu {
         display:none;
