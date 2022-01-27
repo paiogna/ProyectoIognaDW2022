@@ -12,6 +12,8 @@
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+
 </head>
 <body class="family">
     <!--FILA DEL LOGO Y EL MENU-->
@@ -20,9 +22,6 @@
             <a href="index.html">
                 <img src="imagen/logo.png" alt="logo">
             </a>
-        </div>
-        <div class="hamb">
-            <img src="imagen/icono-hamburguesa.png" alt="logo">
         </div>
         <div>
             <nav>
@@ -60,16 +59,16 @@
                                 <a class="nav-link active" aria-current="page" href="index.html">Home</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="../pruebaGitHub/html/productos.html">Productos</a>
+                                <a class="nav-link" href="html/productos.html">Productos</a>
                             </li>
                             <li>
-                                <a class="nav-link" href="../pruebaGitHub/html/rutina.html">Rutina</a>
+                                <a class="nav-link" href="html/rutina.html">Rutina</a>
                             </li>
                             <li>
-                                <a class="nav-link" href="../pruebaGitHub/html/quienes-somos.html">Quienes</a>
+                                <a class="nav-link" href="html/quienes-somos.html">Quienes Somos</a>
                             </li>
                             <li>
-                                <a class="nav-link" href="../pruebaGitHub/html/contacto.html">Contacto</a>
+                                <a class="nav-link" href="html/contacto.html">Contacto</a>
                             </li>
                         </ul>
                     </div>
@@ -82,7 +81,7 @@
     <!--CIERRE FILA DEL LOGO Y EL MENU-->
     <!--COMIENZA LA INFORMACION DE MI SECCION-->
     <main>
-        <div id="carouselExampleFade" class="carousel slide carousel-fade" data-bs-ride="carousel">
+        <div id="carouselExampleFade" class="carousel slide carousel-fade animate__animated animate__slideInUp" data-bs-ride="carousel">
             <div class="carousel-inner">
               <div class="carousel-item active">
                 <img src="imagen/home.jpg" class="d-block w-100" alt="carousel1">
@@ -107,30 +106,25 @@
             <h2 class="tituloProductos">Productos destacados</h2>
         </div>
         <div class="productos">
-            <img class="producto1" src="imagen/crema-rosa.jpg" alt="crema-rosa">
-            <img class="producto2" src="imagen/botellas.jpg" alt="botellas">
-            <img class="producto3" src="imagen/serumamarillo.jpg" alt="serum-amarillo">
+            <img class="wow animate__animated animate__zoomIn producto1" src="imagen/crema-rosa.jpg" alt="crema-rosa">
+            <img class="wow animate__animated animate__zoomIn producto2" src="imagen/botellas.jpg" alt="botellas">
+            <img class="wow animate__animated animate__zoomIn producto3" src="imagen/serumamarillo.jpg" alt="serum-amarillo">
         </div>
         <div class="manifiesto">
-            <div class="textoManifiesto">
+            <div class="wow animate__animated animate__fadeInUp textoManifiesto">
                 <h2>Manifiesto</h2>
                 <p>En Flora creamos experiencias botánicas a través de productos de auto-cuidado que limpian, nutren y sanan. Combinamos principios activos dermatológicos con extractos de plantas para lograr una cosmética limpia, efectiva y con efectos duraderos</p>
                 <a href="html/quienes-somos.html">Leer mas...</a>
             </div>
-            <img class="imgManifiesto" src="imagen/serumflores.jpg" alt="serum-flores">    
+            <img class="wow animate__animated animate__fadeInUp imgManifiesto" src="imagen/serumflores.jpg" alt="serum-flores">    
         </div>  
         <div class="rutinas">
-            <div class="textoRutina">
+            <div class="wow animate__animated animate__fadeInUp textoRutina">
                 <h2>Rutinas de Cuidado facial</h2>
                 <p>En Flora queremos que cuides de tu piel como ella se lo merece, que logres tus objetivos y que tengas la confianza de que tu piel puede verse como siempre la soñaste. Como cada piel es diferente, te invitamos a que realices el test y averigues cual es tu rutina ideal!!</p>
                 <a href="html/rutina.html">Conoce cuál es tu rutina ideal</a>
             </div>
-            <img class="imgRutina" src="imagen/goteroserum.jpg" alt="foto-rutina">
-        </div>
-        <div class="newsletterMain">
-            <label for="email">Únete a nuestro Newsletter</label>
-            <input type="email" name="email" id="email" placeholder="ejemplo@email.com" class="botones">
-            <input type="button" value="Enviar" class="botones">
+            <img class="wow animate__animated animate__fadeInUp imgRutina"  src="imagen/goteroserum.jpg" alt="foto-rutina">
         </div>
     </main>
     <!--TERMINA LA INFORMACION DE MI SECCION-->
@@ -158,10 +152,19 @@
             <input type="button" value="Enviar" class="botones">
          </div>
         <div class="footerSocial">
-            <img src="imagen/facebook.webp" alt="logofacebook">
-            <img src="imagen/instagram.png.crdownload" alt="logoinstagram">
+            <a href="https://www.facebook.com/">
+                <img src="imagen/facebook.png" alt="logofacebook">
+            </a>
+            <a href="https://www.instagram.com/">
+                <img src="imagen/instagram.png.crdownload" alt="logoinstagram">
+            </a>
         </div>
     </footer>
     <!--FIN DEL FOOTER-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js">
+    </script>
+    <script>
+       new WOW().init();
+    </script>
 </body>
 </html>
