@@ -6,6 +6,11 @@
 $fontFamily: 'Montserrat', sans-serif; 
 $bgColorSeccion: #F2BDC7;
 
+@mixin size($width, $height) {
+    width: $width;
+    height: $height;
+}
+
 /* BODY */
 #navbarCelu {
     display: none;
@@ -56,8 +61,7 @@ header {
     grid-template-areas: "logo menu";
     justify-content: space-around;
     background-color:lavenderblush;
-    width:100%;
-    height: 110px;
+    @include size (100%, 110px);
     padding-top: 10px;
     padding-bottom: 10px;
 }
@@ -69,8 +73,7 @@ div nav ul {
     justify-content: center;
     align-items: center;
     list-style-type: none;
-    width: 100%;
-    height:110px;
+    @include size (100%, 110px);
     grid-area: "menu";
     
     li a:hover{
@@ -90,13 +93,11 @@ li a {
 
 div a img {
     grid-area: "logo";
-    width:100%;
-    height:100%;
+    @include size (100%, 100%);
 }
 
 .carrusel {
-    width: 100%;
-    height:40%;
+    @include size (100%, 40%);
 }
 
 .animate__animated .animate__fadeInUp {
@@ -108,8 +109,7 @@ div a img {
 
 /*seccion INDEX*/
 .productos {
-    width:100%;
-    height:100%;
+    @include size (100%, 100%);
     display: grid;
     grid-template-rows: 90%;
     grid-template-columns: 30% 30% 30%;
@@ -148,15 +148,13 @@ div a img {
     align-items: stretch;
     justify-content: space-evenly;
     align-content: center;
-    width:100%;
-    height: 400px;
+    @include size (100%, 400px);
 }
 
 .textoManifiesto {
     grid-area: textomanifiesto;
     padding: 10px;
-    height:100%;
-    width: 100%;
+    @include size (100%, 100%);
 
     p{    
         padding-top: 15px;
@@ -182,8 +180,7 @@ div a img {
 
 .imgManifiesto {
     grid-area: fotomani;
-    width: 100%;
-    height:100%;
+    @include size (100%, 100%);
 }
 
 .rutinas {
@@ -196,14 +193,12 @@ div a img {
     justify-content: space-evenly;
     align-content: center;
     background-color: $bgColorSeccion;
-    width:100%;
-    height: 340px;
+    @include size (100%, 340px);
 }
 
 .textoRutina {
     grid-area: textorutina;
-    height:100%;
-    width: 100%;
+    @include size (100%, 100%);
 
     p {
         padding-top: 10px;
@@ -226,8 +221,7 @@ div a img {
 
 .imgRutina {
     grid-area: fotoruti;
-    width: 100%;
-    height:100%;
+    @include size (100%, 100%);
 }
 
 form {
@@ -237,8 +231,7 @@ form {
 }
 
 .newsletterMain {
-    width: 100%;
-    height: 80px;
+    @include size (100%, 80px);
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -257,8 +250,7 @@ form {
     align-content:center;
     justify-items: center;
     align-items: center;
-    width: 100%;
-    height:100%;
+    @include size (100%, 100%);
 }
 
 .textoQuienes {
@@ -298,8 +290,7 @@ form {
     flex-direction: column;
     justify-content: space-evenly;
     align-items: center;
-    width:100%;
-    height:100%;
+    @include size (100%, 100%);
     padding-top: 20px;
 }
 
@@ -313,26 +304,22 @@ form {
     row-gap: 20px;
     justify-content: center;
     align-content:center;
-    width:100%;
-    height: 800px;
+    @include size (100%, 800px);
 
     img {
-        width:100%;
-        height:100%;
+        @include size (100%, 100%);
         align-content: center;
         transition: 1s;
     }
 
     img:hover {
-        width:104%;
-        height:104%;
+        @include size (104%, 104%);
     }
 }
 
 /*seccion RUTINA*/
 .seccionRutina {
-    width:100%;
-    height:auto;
+    @include size (100%, auto);
     padding:30px;
 
     p {
@@ -341,16 +328,14 @@ form {
 }
 
 .mainRutina {
-    width:100%;
-    height:860px;
+    @include size (100%, 860px);
     background-image: url("../imagen/fondorutina.jpg");
     background-size: contain;
     background-repeat:no-repeat;
 }
 
 .formRutina {
-    width: 60%;
-    height: 600px;
+    @include size (60%, 600px);
     justify-content: start;
     align-content: space-between;
     display:grid;
@@ -412,16 +397,17 @@ form {
 }
 .botonesr1 {
     grid-area: botonesr1;
+    @extend .botones;
 }
 .botonesr2 {
     grid-area: botonesr2;
+    @extend .botones;
 }
 
 
 /*seccion CONTACTO*/
 .formContacto {
-    width: 100%;
-    height: 600px;
+    @include size (100%, 600px);
     justify-content: center;
     align-content: space-between;
     display:grid;
@@ -483,9 +469,11 @@ form {
 }
 .botones1 {
     grid-area: botones1;
+    @extend .botones;
 }
 .botones2 {
     grid-area: botones2;
+    @extend .botones;
 }
 
 #mainContacto {
@@ -495,8 +483,7 @@ form {
     grid-template-areas:'cont cont' 
                         'form img';
     background-color: $bgColorSeccion;
-    width:100%;
-    height:700px;
+    @include size (100%, 700px);
 }
 
 .imgContacto{
@@ -521,8 +508,7 @@ footer {
     align-items: center;
     background-color:lavenderblush;
     color:black;
-    height:120px;
-    width: 100%;
+    @include size (100%, 120px);
     padding-top:20px;
     padding-bottom:20px;
 
@@ -545,9 +531,8 @@ footer {
    grid-area: logo;
 
    img {
-    width: 50px;
-    height: 50px;
-}
+    @include size (50px, 50px);
+    }
 }
 
 .menuFooter {
@@ -562,8 +547,7 @@ footer {
     grid-area: sociales;
 
     img {
-        width:50px;
-        height:auto;
+        @include size (50px, auto);
     }
 }
 
@@ -578,8 +562,7 @@ footer {
     }
 
     #logoCel {
-        width: 100px;
-        height: 100px;
+        @include size (100px, 100px);
     }
 
     div nav ul {
@@ -589,8 +572,7 @@ footer {
         justify-content: center;
         align-items: center;
         list-style-type: none;
-        width: 100%;
-        height:250px;
+        @include size (100%, 250px);
         grid-area: "menu";
     }    
 
@@ -600,8 +582,7 @@ footer {
 
     /*seccion INDEX*/
     .productos {
-        width:100%;
-        height:100%;
+        @include size (100%, 100%);
         display: grid;
         grid-template-rows: 90%;
         grid-template-columns: 90%;
@@ -621,8 +602,7 @@ footer {
     
     .producto1 {
         grid-area: producto1;
-        height:100%;
-        width:100%;
+        @include size (100%, 100%);
     }
 
     .producto2 {
@@ -643,14 +623,12 @@ footer {
         align-items: stretch;
         justify-content: space-evenly;
         align-content: center;
-        width:100%;
-        height: 100%;
+        @include size (100%, 100%);
     }
     
     .textoManifiesto {
         grid-area: textomanifiesto;
-        height:100%;
-        width: 100%;
+        @include size (100%, 100%);
         padding: 0px;
 
         p{    
@@ -674,8 +652,7 @@ footer {
     
     .imgManifiesto {
         grid-area: fotomani;
-        width: 100%;
-        height:100%;
+        @include size (100%, 100%);
     }
 
     .rutinas {
@@ -689,8 +666,7 @@ footer {
         justify-content: space-evenly;
         align-content: center;
         background-color: $bgColorSeccion;
-        width:100%;
-        height: 100%;
+        @include size (100%, 100%);
     }
     
     .textoRutina {
@@ -726,8 +702,7 @@ footer {
     }
     
     .newsletterMain {
-        width: 100%;
-        height: 80px;
+        @include size (100%, 80px);
         display: flex;
         flex-direction: column;
         justify-content: center;
@@ -748,8 +723,7 @@ footer {
         align-items: center;
         background-color:lavenderblush;
         color:black;
-        height:100%;
-        width: 100%;
+        @include size (100%, 100%);
 
         div ul {
             text-decoration: none;
@@ -788,8 +762,7 @@ footer {
         grid-area: sociales;
 
         img {
-            width:40px;
-            height:40px;
+            @include size (40px, 40px);
         }
     }
  
@@ -800,8 +773,7 @@ footer {
         flex-direction: column;
         justify-content: space-evenly;
         align-items: center;
-        width:100%;
-        height:100px;
+        @include size (100%, 100px);
 
         h1 {
             padding-top: 10px;
@@ -814,7 +786,6 @@ footer {
             padding-left: 5px;
             padding-right: 5px;
             text-align: center;
-    
         }
     
     }
@@ -835,12 +806,10 @@ footer {
         row-gap: 10px;
         justify-content: center;
         align-content:center;
-        width:100%;
-        height: 100%;
+        @include size (100%, 100%);
 
         img {
-            width:100%;
-            height:100%;    
+            @include size (100%, 100%);  
         }
     }
 
@@ -855,15 +824,13 @@ footer {
     }
     
     .mainRutina {
-        width:100%;
-        height:1000px;
+        @include size (100%, 1000px);
         background-color: $bgColorSeccion;
         background-image: none;
     }
     
     .formRutina {
-        width: 100%;
-        height: 800px;
+        @include size (100%, 800px);
         font-size: 15px;
         justify-content: start;
         align-content: space-between;
@@ -893,8 +860,7 @@ footer {
     }
     
     .formContacto {
-        width: 100%;
-        height: 800px;
+        @include size (100%, 800px);
         justify-content: center;
         align-content: space-between;
         display:grid;
@@ -933,8 +899,7 @@ footer {
         grid-template-areas:'cont' 
                             'form';
         background-color: $bgColorSeccion;
-        width:100%;
-        height:900px;
+        @include size (100%, 900px);
     }
     
     .imgContacto{
@@ -944,8 +909,7 @@ footer {
     .formlegend {
         font-size: 18px;
         padding: 0;
-        height:50px;
-        width:100%;
+        @include size (100%, 50px);
         text-align: center;
     }
 
@@ -969,8 +933,7 @@ footer {
         align-content:center;
         justify-items: center;
         align-items: center;
-        width: 100%;
-        height:100%;
+        @include size (100%, 100%);
     }
 
     .textoQuienes {
@@ -984,8 +947,6 @@ footer {
             font-size: 10px;
         }
     }
-
-
 }
 
 
@@ -996,8 +957,7 @@ footer {
     }
 
     #logoCel {
-        width: 100px;
-        height: 100px;
+        @include size (100px, 100px);
     }
     
     header {
@@ -1011,8 +971,7 @@ footer {
         justify-content: center;
         align-items: center;
         list-style-type: none;
-        width: 100%;
-        height:250px;
+        @include size (100%, 250px);
         grid-area: "menu";
     }    
 
@@ -1023,8 +982,7 @@ footer {
 
     div a img {
         grid-area: logo;
-        width:100%;
-        height:100%;
+        @include size (100%, 100%);
     }
 
     .textoManifiesto {
@@ -1085,16 +1043,14 @@ footer {
 
     
     .mainRutina {
-        width:100%;
-        height:650px;
+        @include size (100%, 650px);
         background-image: url("../imagen/fondorutina.jpg");
         background-size:cover;
         background-repeat:no-repeat;
     }
     
     .formRutina {
-        width: 100%;
-        height: 500px;
+        @include size (100%, 500px);
         justify-content: start;
         align-content: space-between;
         display:grid;
@@ -1129,10 +1085,8 @@ footer {
         background-position: left;
         background-size:cover;
         background-repeat: no-repeat;
-        width:100%;
-        height:700px;
+        @include size (100%, 700px);
     }
-    
     
 }
 

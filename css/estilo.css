@@ -30,7 +30,7 @@ h2 {
   font-size: 30px;
   margin-bottom: 0; }
 
-.botones {
+.botones, .botonesr1, .botonesr2, .botones1, .botones2 {
   font-family: "Montserrat", sans-serif;
   font-style: italic;
   font-size: 15px; }
@@ -127,8 +127,8 @@ div a img {
 .textoManifiesto {
   grid-area: textomanifiesto;
   padding: 10px;
-  height: 100%;
-  width: 100%; }
+  width: 100%;
+  height: 100%; }
   .textoManifiesto p {
     padding-top: 15px;
     padding-bottom: 15px;
@@ -164,8 +164,8 @@ div a img {
 
 .textoRutina {
   grid-area: textorutina;
-  height: 100%;
-  width: 100%; }
+  width: 100%;
+  height: 100%; }
   .textoRutina p {
     padding-top: 10px;
     padding-bottom: 10px;
@@ -422,8 +422,8 @@ footer {
   align-items: center;
   background-color: lavenderblush;
   color: black;
-  height: 120px;
   width: 100%;
+  height: 120px;
   padding-top: 20px;
   padding-bottom: 20px; }
   footer div ul {
@@ -493,8 +493,8 @@ footer {
     font-size: 20px; }
   .producto1 {
     grid-area: producto1;
-    height: 100%;
-    width: 100%; }
+    width: 100%;
+    height: 100%; }
   .producto2 {
     display: none; }
   .producto3 {
@@ -512,8 +512,8 @@ footer {
     height: 100%; }
   .textoManifiesto {
     grid-area: textomanifiesto;
-    height: 100%;
     width: 100%;
+    height: 100%;
     padding: 0px; }
     .textoManifiesto p {
       padding-top: 10px;
@@ -579,8 +579,8 @@ footer {
     align-items: center;
     background-color: lavenderblush;
     color: black;
-    height: 100%;
-    width: 100%; }
+    width: 100%;
+    height: 100%; }
     footer div ul {
       text-decoration: none;
       list-style-type: none; }
@@ -680,8 +680,8 @@ footer {
   .formlegend {
     font-size: 18px;
     padding: 0;
-    height: 50px;
     width: 100%;
+    height: 50px;
     text-align: center; }
   .contacto {
     font-size: 25px;
