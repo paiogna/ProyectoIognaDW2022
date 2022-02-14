@@ -169,12 +169,15 @@ div a img {
         font-style: italic;
         font-size: 20px;
         padding: 0;
+        transition: 1s;
     }
 
     a:hover {
         color:black;
         font-weight:bolder;
+        font-size: 21px;
     }
+
 }
 
 
@@ -211,11 +214,13 @@ div a img {
         color: black;
         font-style: italic;
         font-size: 20px;
+        transition: 1s;
     }
 
     a:hover {
         color:black;
         font-weight:bolder;
+        font-size: 21px;
     }
 }
 
